@@ -1,16 +1,18 @@
-const a = 20;
-const b = 100;
-const myName = "Seoungjin";
-const toBuy = ["tomato", "potato", "pizza"];
-
-console.log(toBuy[2]);
-toBuy[2] = "water";
-console.log(toBuy[2]);
-toBuy.push("corn");
-console.log(toBuy[3]);
-console.log(toBuy);
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello! " + myName);
-console.log("hi! " + myName);
+const calculator = {
+  plus: function (a, b) {
+    console.log(a + b);
+  },
+  minus: function (a, b) {
+    console.log(a - b);
+  },
+  div: function (a, b) {
+    console.log(a / b);
+  },
+  power: function (a, b) {
+    console.log(a ** b);
+  },
+};
+calculator.plus(5, 1);
+calculator.minus(5, 1);
+calculator.div(5, 1);
+calculator.power(5, 1);
