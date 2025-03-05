@@ -1,14 +1,8 @@
-const age = parseInt(prompt("How old are you?"));
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-console.log(isNaN(age));
-if (isNaN(age) || age < 0) {
-  console.log("Please write a positive number");
-} else if (age < 18) {
-  console.log("You are too young");
-} else if (age >= 18 && age <= 50) {
-  console.log("You can dirink");
-} else if (age > 50 && age <= 80) {
-  console.log("You should exercise");
-} else if (age > 80) {
-  console.log("You can do whatever you want");
+function onLoginBtnClick() {
+  console.log(loginInput.value);
 }
+
+loginButton.addEventListener("click", onLoginBtnClick);
