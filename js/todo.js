@@ -19,11 +19,11 @@ function paintToDo(newToDO) {
   toDoList.appendChild(li);
 }
 
-function hadleToDoSubmit(event) {
+function handleToDoSubmit(event) {
   event.preventDefault();
   const newToDO = toDoInput.value;
   toDoInput.value = "";
   paintToDo(newToDO);
 }
 
-toDoForm.addEventListener("submit", hadleToDoSubmit);
+toDoForm.addEventListener("submit", handleToDoSubmit);
