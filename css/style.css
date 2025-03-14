@@ -7,3 +7,13 @@ music-box audio {
   height: 40px;
   opacity: 0.6;
 }
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -100;
+  height: 100%;
+  width: 100%;
+}
