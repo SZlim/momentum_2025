@@ -1,5 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
+@import "reset.css";
+
+body {
+  font-family: font-family: "Noto Sans Mono", monospace;
+}
+
 .hidden {
   display: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.today {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 400px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: antiquewhite;
+  font-size: 100px;
+}
+
+#date {
+  font-size: 91px;
+  text-align: center;
 }
 
 music-box audio {
