@@ -45,7 +45,7 @@ function handleToDoSubmit(event) {
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
-const savedToDos = localStorage.getItem(TODOS_KEY);
+const savedToDos = localStorage.getItem(TODOS_KEY); //첫 실행 코드//
 
 if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos);
