@@ -52,3 +52,30 @@ img {
   height: 100%;
   width: 100%;
 }
+
+#clock {
+  font-family: fantasy;
+  margin-top: 200px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+#login-form {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid;
+}
+#login-form input {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+
+#greeting {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: fantasy;
+}
