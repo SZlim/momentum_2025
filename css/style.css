@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
 @import "reset.css";
 
-body {
-  font-family: font-family: "Noto Sans Mono", monospace;
-}
-
 .hidden {
   display: none;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,14 +14,11 @@ body{
 }
 
 .today {
-  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 400px;
-  height: 250px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.4);
   color: antiquewhite;
@@ -53,14 +46,6 @@ img {
   width: 100%;
 }
 
-#clock {
-  font-family: fantasy;
-  margin-top: 200px;
-  font-size: 60px;
-  display: flex;
-  justify-content: center;
-}
-
 #login-form {
   display: flex;
   justify-content: center;
@@ -77,5 +62,4 @@ img {
   display: flex;
   justify-content: center;
   font-size: 60px;
-  font-family: fantasy;
 }
