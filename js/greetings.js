@@ -9,6 +9,7 @@ function onLoginSubmit(event) {
   event.preventDefault(); //submit 방지
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
+  toDoForm.classList.add(HIDDEN_CLASSNAME);
   localStorage.setItem(USERNAME_KEY, username);
   paintGreetings(username);
 }
