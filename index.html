@@ -8,32 +8,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="weather">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <form id="login-form">
-        <h2>Hello! What`s your name?</h2>
-        <input required maxlength="15" type="text" />
-      </form>
-      <h1 id="greeting" class="hidden"></h1>
-      <div id="quote">
-        <span></span>
-        <!--quote를 담당-->
-        <span></span>
-        <!--author를 담당-->
-      </div>
-      <form id="todo-form" class="hidden">
-        <input
-          required
-          type="text"
-          placeholder="Write a To Do and Press Enter"
-        />
-        <ul id="todo-list"></ul>
-      </form>
+    <div id="weather">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+    <form id="login-form" class="hidden">
+      <h2>Hello! What`s your name?</h2>
+      <input required maxlength="15" type="text" />
+      <button>Enter⏎</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="quote">
+      <span></span>
+      <!--quote를 담당-->
+      <span></span>
+      <!--author를 담당-->
+    </div>
+    <form id="todo-form" class="hidden">
+      <input required type="text" placeholder="Write a To Do and Press Enter" />
+    </form>
+    <ul id="todo-list"></ul>
     <div class="today">
       <h2 id="clock">00:00:00</h2>
       <h3 id="date"></h3>
