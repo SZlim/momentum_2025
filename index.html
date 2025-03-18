@@ -8,32 +8,38 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="weather">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="itmes">
+      <div id="weather">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <form id="login-form" class="hidden">
+        <h2>Hello! What`s your name?</h2>
+        <input required maxlength="15" type="text" />
+        <button>Enter⏎</button>
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+
+      <form id="todo-form" class="hidden">
+        <input
+          required
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+        />
+      </form>
+      <ul id="todo-list"></ul>
+      <div class="today">
+        <h2 id="clock">00:00:00</h2>
+        <h3 id="date"></h3>
+      </div>
     </div>
-    <form id="login-form" class="hidden">
-      <h2>Hello! What`s your name?</h2>
-      <input required maxlength="15" type="text" />
-      <button>Enter⏎</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
     <div id="quote">
       <span></span>
       <!--quote를 담당-->
       <span></span>
       <!--author를 담당-->
     </div>
-    <form id="todo-form" class="hidden">
-      <input required type="text" placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div class="today">
-      <h2 id="clock">00:00:00</h2>
-      <h3 id="date"></h3>
-    </div>
-
     <!--.js파일은 body 맨아래에 배치-->
     <script src="js/greetings.js"></script>
     <script src="js/time.js"></script>
