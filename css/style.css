@@ -53,18 +53,16 @@ body {
 
 #todo-form input {
   font-size: var(--font-size__S);
-  color: antiquewhite;
-  width: 200px;
+  color: var(--font-color__def);
+  width: 300px;
   height: 30px;
   padding: 5px;
   background-color: transparent;
+  border: none;
   border-bottom: 1px solid antiquewhite;
-  border-top: none;
-  border-left: none;
-  border-right: none;
 }
 
-#todo-form input::-webkit-input-placeholder {
+#todo-form input::placeholder {
   color: antiquewhite;
 }
 
