@@ -11,12 +11,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 #weather,
 .login-todo__container,
 .date-time__container {
+  width: 100%;
   margin: 150px;
 }
 
@@ -25,10 +26,14 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   white-space: nowrap;
-  margin-top: var(--magin-top__var);
+  margin-top: var(--margin-top__50px);
   padding: var(--padding-normal);
   font-size: var(--font-size__R);
   color: var(--font-color__def);
+  font-weight: bold;
+}
+#weather span {
+  margin-bottom: 5px;
 }
 
 .login-todo__container {
@@ -37,17 +42,24 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: var(--magin-top__var);
+  margin-top: var(--margin-top__200px);
   padding: var(--padding-normal);
   font-size: var(--font-size__L);
   color: var(--font-color__def);
+  width: 300px;
+}
+
+#greeting {
+  font-weight: bold;
+  font-size: 80px;
+  white-space: nowrap;
 }
 
 .todo__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: var(--magin-top__var);
+  margin-top: var(--margin-top__50px);
   font-size: var(--font-size__R);
 }
 
@@ -64,10 +76,11 @@ body {
 
 #todo-form input::placeholder {
   color: antiquewhite;
+  text-align: center;
 }
 
 #todo-list {
-  margin-top: var(--magin-top__var);
+  margin-top: var(--margin-top__50px);
   white-space: nowrap;
   text-align: left;
 }
@@ -79,11 +92,12 @@ body {
 .date-time__container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-top: var(--magin-top__var);
-  padding: var(--magin-top__var);
+  justify-content: flex-end;
+  margin-top: var(--margin-top__50px);
+  padding: var(--padding-normal);
   font-size: var(--font-size__R);
   color: var(--font-color__def);
+  font-weight: bold;
 }
 
 .date-time__container h2 {
@@ -92,13 +106,14 @@ body {
 
 .date-time__container h3 {
   white-space: nowrap;
+  margin-top: 10px;
 }
 
 #quote {
   position: fixed;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
   padding: 25px;
   display: flex;
   flex-direction: column;
