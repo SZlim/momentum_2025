@@ -1,10 +1,12 @@
 :root {
   --margin-top__50px: 50px;
+  --margin-top__100px: 100px;
   --margin-top__200px: 200px;
   --padding-normal: 25px;
   --padding-small: 10px;
   --font-size__S: 12px;
   --font-size__R: 20px;
+  --font-size__R2: 38px;
   --font-size__L: 50px;
   --font-color__def: whitesmoke;
 }
