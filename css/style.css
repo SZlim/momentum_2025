@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100..900&display=swap");
 @import "reset.css";
 @import "variables.css";
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Nanum Myeongjo", serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
+  padding-left: 50px;
 }
 
 #weather,
@@ -19,6 +21,7 @@ body {
 .date-time__container {
   width: 100%;
   margin: 150px;
+  transform: translateX(25px);
 }
 
 #weather {
@@ -42,16 +45,58 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: var(--margin-top__200px);
+  margin-top: var(--margin-top__100px);
   padding: var(--padding-normal);
   font-size: var(--font-size__L);
   color: var(--font-color__def);
-  width: 300px;
+  width: 400px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-btn__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 35px;
+}
+
+#login-form h3 {
+  font-size: var(--font-size__L);
+  width: 600px;
+}
+
+#login-form input {
+  width: 200px;
+  height: 20px;
+  font-size: var(--font-size__R);
+  color: whitesmoke;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid antiquewhite;
+}
+
+#login-form input::placeholder {
+  font-size: var(--font-size__S);
+  color: antiquewhite;
+  text-align: center;
+}
+
+#login-form button {
+  color: var(--font-color__def);
+  background-color: transparent;
+  border: none;
+  margin-left: 15px;
 }
 
 #greeting {
-  font-weight: bold;
-  font-size: 80px;
+  font-weight: lighter;
+  font-size: 50px;
   white-space: nowrap;
 }
 
@@ -83,6 +128,8 @@ body {
   margin-top: var(--margin-top__50px);
   white-space: nowrap;
   text-align: left;
+  max-height: 200px;
+  overflow-y: auto; //*리스트 스크롤 *//
 }
 
 #todo-list li {
@@ -97,11 +144,14 @@ body {
   padding: var(--padding-normal);
   font-size: var(--font-size__R);
   color: var(--font-color__def);
+  transform: translateX(-70px);
   font-weight: bold;
 }
 
 .date-time__container h2 {
+  margin-bottom: 15px;
   height: 20px;
+  font-size: var(--font-size__R2);
 }
 
 .date-time__container h3 {
@@ -113,7 +163,7 @@ body {
   position: fixed;
   bottom: 0;
   left: 50%;
-  transform: translateX(-55%);
+  transform: translateX(-50%);
   padding: 25px;
   display: flex;
   flex-direction: column;
