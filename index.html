@@ -15,9 +15,16 @@
     </div>
     <div class="login-todo__container">
       <form id="login-form" class="hidden">
-        <h2>Hello! What`s your name?</h2>
-        <input required maxlength="15" type="text" />
-        <button>Enter⏎</button>
+        <h3>안녕하세요. 반갑습니다.</h3>
+        <div id="input-btn__container">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="Write a your name and press Enter"
+          />
+          <button>Enter⏎</button>
+        </div>
       </form>
       <h1 id="greeting" class="hidden"></h1>
       <div class="todo__container">
@@ -43,6 +50,12 @@
     </div>
     <!--.js파일은 body 맨아래에 배치-->
     <div class="opcity-layer"></div>
+    <audio
+      src="music/2020-11-17_-_Time_Alone_-_www.FesliyanStudios.com_David_Renda.mp3"
+      autoplay
+      loop
+      class="hidden"
+    ></audio>
     <script src="js/greetings.js"></script>
     <script src="js/time.js"></script>
     <script src="js/quotes.js"></script>
