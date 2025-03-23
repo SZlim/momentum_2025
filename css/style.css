@@ -111,7 +111,7 @@ body {
 #todo-form input {
   font-size: var(--font-size__S);
   color: var(--font-color__def);
-  width: 300px;
+  width: 600px;
   height: 30px;
   padding: 5px;
   background-color: transparent;
@@ -122,13 +122,17 @@ body {
 #todo-form input::placeholder {
   color: antiquewhite;
   text-align: center;
+  font-size: var(--font-size__R);
 }
 
 #todo-list {
   margin-top: var(--margin-top__50px);
+  height: 300px;
+  width: 600px;
+  border: 1px solid whitesmoke;
+  border-radius: 25px;
   white-space: nowrap;
   text-align: left;
-  max-height: 200px;
   overflow-y: auto; //*리스트 스크롤 *//
 }
 
